@@ -1,0 +1,27 @@
+//            if (mEraserMode == true){
+//                for (int i = 0; i < redoPaths.size(); i++) {
+//                    mPathMeasure = new PathMeasure( redoPaths.get(i), false );
+//                    totalLength = mPathMeasure.getLength();
+//                    distancePerFrame = totalLength / FRAMECOUNT;
+//                    for( int frame = 0; frame < FRAMECOUNT; frame++ ){
+//                        mPathMeasure.getPosTan( distancePerFrame * frame, position, tangent);
+//                        pointPosition = new PointF( position[ 0 ], position[ 1 ] );
+//                        tmp_mPathMeasure.getPosTan( tmp_distancePerFrame * frame, position, tangent);
+//                        tmp_pointPosition = new PointF( position[ 0 ], position[ 1 ] );
+//                        Log.v("x",Float.toString(pointPosition.x) + "," + Float.toString(tmp_pointPosition.x) + "," + Integer.toString(frame));
+//                        Log.v("y",Float.toString(pointPosition.y) + "," + Float.toString(tmp_pointPosition.y));
+//                        if ((pointPosition.x - tmp_pointPosition.x < 10 && pointPosition.x - tmp_pointPosition.x > -10) &&
+//                                (pointPosition.y - tmp_pointPosition.y < 10 && pointPosition.y - tmp_pointPosition.y > -10)){
+//                            finished = true;
+//                            break;
+//                        }
+//                    }
+//                    if (finished == true){
+//                        finished = false;
+//                        undonePaths.add(redoPaths.remove(i));
+//                        invalidate();
+//                        return;
+//                    }
+//                }
+//                return;
+//            }
